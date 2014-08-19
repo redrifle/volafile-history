@@ -1,4 +1,6 @@
-volafile-history
-================
+A Short History Of Volafile
+===========================
 
-Community project for cataloging the history of Volafile.io
+A community project for cataloging the history of Volafile.io
+
+Just clone it and send me pull requests.
