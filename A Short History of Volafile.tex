@@ -1,291 +1,398 @@
-\documentclass[12pt]{report} 
+\documentclass[12pt]{report}
 \usepackage{graphicx}   %Figure out how to format that shit properly
 \usepackage{float}
 \usepackage{hyperref}
 \usepackage{ulem}
-
 \newfloat{image}{h}{thp}
-
-
 
 \begin{document}
 \setcounter{secnumdepth}{2}
 {
+    \title{A Short History of Volafile}
+    \author{by bbaka\footnotemark[0]}
+    \date{\today}
+    \footnotetext{With contributions from various Volafile Users}
+    \maketitle
+    \tableofcontents
+    \pagebreak
+    \vfill
 
+    \section*{Dedication}
+    \parbox{\textwidth}{
+    This is dedicated to all the past and future Volafile users who used the \\
+    site in the spirit it was intended. You might not be recorded in here now \\
+    (or in the future) but hopefully the site has brought you some good times \\
+    and reading this makes you feel just a little closer to everyone at Volafile.\\
+    \raggedright Go upload some more files and stay outta trouble \raggedleft \\--bbaka}
 
-\title{A Short History of Volafile}
-\author{by bbaka\footnotemark}
-\date{\today}
-\footnotetext{With contributions from various Volafile Users}
-\maketitle
-\tableofcontents
-\pagebreak
+    \vfill
 
+    {\centering Created using \LaTeX}
 
-\vfill
-\section*{Dedication}
-\parbox{\textwidth}{This is dedicated to all the past and future Volafile users who used the site in the spirit it was intended. You might not be recorded in here now (or in the future) but hopefully the site has brought you some good times and reading this makes you feel just a little closer to everyone at Volafile. \\ 
-	\raggedright Go upload some more files and stay outta trouble.\\
-		\raggedleft 
-	--bbaka\\
-}
+    \pagebreak
 
-\vfill
+    \chapter*{Introduction}
+	Volafile is a free, anonymous filesharing service created by a young German
+        fellow named Nils. It may be less than a year old, but it has shared a lively
+        history thanks to it's users (and a few bugs). Some of the more notable events
+        in it's history (and some of the less) are contained within these pages. Whether
+        this account of history is actually worth reading, I leave it up to you.
+        Enjoy.
 
-{ 
-	\centering Created using \LaTeX 
-}
+        \begin{image}
+            \centering
+            \includegraphics[scale=0.45]{images/Volafile.jpg}
+        \end{image}
 
-\pagebreak
+        \vfill
+        \pagebreak
 
-\chapter*{Introduction}
-	Volafile is a free, anonymous filesharing service created by a young German fellow named Nils.\\
-	It may be less than a year old, but it has shared a lively history thanks to it's users (and a few bugs). \\
-	Some of the more notable events in it's history (and some of the less) are contained within these pages.\\
-	Whether this account of history is actually worth reading, I leave it up to you.\\ 
-Enjoy.
+        \chapter{History}
+        \section{Creation}
+        One day a guy called Lainex from Germany decided he wanted to make a neat file sharing site, so he did got to work and made one.
 
-\begin{image}
-	\centering
-	\includegraphics[scale=0.45]{images\Volafile.jpg}
-\end{image}
+        \begin{image}
+            \flushright
+            \includegraphics[scale=0.25]{images/lain.jpg}\\
+            Lain-chan
+            \label{fig:kawaii}
+        \end{image}
 
-\vfill
-\pagebreak
+        \section{First Appearance}
+	While many users believe Volafile first appeared during September 2013, it was
+        actually first tested in June of that same year. This version was hacked together
+        with a chatango client and some duct tape. It was first linked posted in a thread
+        on 4chan's /a/ board.
+        [insert original.png here]
 
-\chapter{History}
+        \vfill
+        \pagebreak
 
-\section{Creation}
-	One day a guy called Lainex from Germany decided he wanted to make a neat file sharing site, so he did got to work and made one.
-	\begin{image}
-		\flushright
-		\includegraphics[scale=0.25]{images\lain.jpg}\\
-		Lain-chan
-		\label{fig:kawaii}
-	\end{image}
+        \section{September Beta Launch}
+        After running many tests on his lonesome and with a small group of users (back in June),
+        Lainex created a thread on 4chan's /g/ board. A simple picture of Yuki Nagato holding a
+        mouse in the air with the words ``File Sharing thread'' was in the OP and a link to a
+        room named /g/entoomen was provided.\footnotemark \\
+        And thus Volafile came to life.
+        \footnotetext{Little known fact, the \href{http://archive.rebeccablacktech.com/g/thread/S36862193}{real original thread} was deleted rather quickly and an identical thread was created in it's place about 10 minutes later.}
 
+        \begin{image}
+            \flushright
+            \includegraphics[scale=0.25]{images/VolafileOrigTechnologyPost.jpg}\\
+            \href{http://archive.rebeccablacktech.com/g/thread/S36862456}{The Original Thread}
+            \label{fig:Never Forget}
+        \end{image}
 
-\section{First Appearance}
-	While many users believe Volafile first appeared during September 2013, it was actually first tested in June of that same year. This version was hacked together with a chatango client and some duct tape. It was first linked posted in a thread on 4chan's /a/ board.
+        \section[Volafile gets a new server]{Volafile gets a new server \\ AKA Whoops! Finland-Chan overloaded the server!}
+        (Ask Lain probably happened between oct-dec.) Yui decided it would
+        be a good idea to upload as much as he could to the Volafile servers,
+        resulting in the hilarious situation of the servers running out of
+        harddrive space. Users were unable to upload any files to the full
+        servers and Volafile's filesharing ground to a stand still. Shortly
+        after this incident Lain decided to invest in a second file storage
+        server for Volafile, a number which has grown over time to four.
 
-[insert original.png here]
+        \vfill
+        \pagebreak
 
-\vfill
-\pagebreak
+        \section{Hacker News Invasion}
+        It was November 4th and Lain felt that he was ready for some more
+        users, he decided it would be a good idea to make himself a
+        thread on Hacker News\footnotemark .
+        \footnotetext{\href{https://news.ycombinator.com/item?id=6670113}{The post in question}}
+        What resulted from this was the servers being pushed to max
+        capacity as hundreds of curious people invaded Volafile.
+        Lain was forced to limit the max users per room to 300 and
+        then to 100 as users spilled out from their Hacker News
+        Volaroom and into the /g/entoomen room (and others) in
+        order to prevent his poor servers from overloading.
 
+        \section{The Great Japanese Immigration}
+        One day out of the blue, Volafile received an influx
+        of unexpected visitors, the Japanese. As it turns out
+        a popular Japanese blog had discovered Volafile and
+        written an article about it, this obviously caused
+        the eyes of many Japanese to turn on Volafile. A decent
+        portion of /g/entoomen being filthy weebs (at the time),
+        they of course were both over joyed and highly amused as
+        the Japanese users attempted to communicate with them. %needs more work include what blog it was and stuff like that
 
-\section{September Beta Launch}
-	After running many tests on his lonesome and with a small group of users (back in June), Lainex created a thread on 4chan's /g/ board.
-	A simple picture of Yuki Nagato holding a mouse in the air with the words 
-	``File Sharing thread'' was in the OP and a link to a room named /g/entoomen was provided.\footnotemark \\ 
+        \section{A new invader appears, Morocco attacks!}
+        I'm not going to write this right now, but I'm pretty
+        sure it was mostly Moroccans that invaded that one time.
+        I think.
 
-	And thus Volafile came to life.
-		\footnotetext{Little known fact, the \href{http://archive.rebeccablacktech.com/g/thread/S36862193}{the real original thread} was deleted rather quickly and an identical thread was created in it's place about 10 minutes later.}
+        \section[The Disappearance of  Radio-tan]{The Disappearance of \sout{Haru} Radio-tan\footnotemark}
+        \footnotetext{Rest in Peace}
+        A much beloved feature of Volafile, Radio-tan was first
+        added in early November 2013. She could often be heard chanting
+        ``Onii-Chan'' in various ways and would always let us know what
+        song she was singing next.\\
+	Worth noting is her dedication to singing whatever the users
+        uploaded, even when endless hordes of David Bowie songs were
+        added to her playlist she never gave up.\\
+	While historians debate the exact date of Radio-tan's disappearance,
+        but they all agree it was sometime during March 2014.
 
-		
-\begin{image}
-	\flushright
-		\includegraphics[scale=0.25]{images\VolafileOrigTechnologyPost.jpg}\\
-		\href{http://archive.rebeccablacktech.com/g/thread/S36862456}{The Original Thread}
-		\label{fig:Never Forget}
-\end{image}
+        \vfill
+        \pagebreak
 
-
-
-\section[Volafile gets a new server]{Volafile gets a new server AKA \\ Whoops! Finland-Chan overloaded the server!}
-(Ask Lain probably happened between oct-dec.) Yui decided it would be a good idea to upload as much as he could to the Volafile servers, resulting in the hilarious situation of the servers running out of harddrive space. Users were unable to upload any files to the full servers and Volafile's filesharing ground to a stand still. Shortly after this incident Lain decided to invest in a second file storage server for Volafile, a number which has grown over time to four.
-\vfill
-\pagebreak
-\section{Hacker News Invasion}
-It was November 4th and Lain felt that he was ready for some more users, he decided it would be a good idea to make himself a thread on Hacker News\footnotemark . \footnotetext{\href{https://news.ycombinator.com/item?id=6670113}{The post in question}}
-What resulted from this was the servers being pushed to max capacity as hundreds of curious people invaded Volafile. Lain was forced to limit the max users per room to 300 and then to 100 as users spilled out from their Hacker News Volaroom and into the /g/entoomen room (and others) in order to prevent his poor servers from overloading.
-
-\section{The Great Japanese Immigration}
-	One day out of the blue, Volafile received an influx of unexpected visitors, the Japanese. As it turns out a popular Japanese blog had discovered Volafile and written an article about it, this obviously caused the eyes of many Japanese to turn on Volafile. A decent portion of /g/entoomen being filthy weebs (at the time), they of course were both over joyed and highly amused as the Japanese users attempted to communicate with them. %needs more work include what blog it was and stuff like that
-
-\section{A new invader appears, Morocco attacks!}
-I'm not going to write this right now, but I'm pretty sure it was mostly Moroccans that invaded that one time. I think.
-
-\section[The Disappearance of  Radio-tan]{The Disappearance of \sout{Haru} Radio-tan\footnotemark} 
-	\footnotetext{Rest in Peace}
-	A much beloved feature of Volafile, Radio-tan was first added in early November 2013. She could often be heard chanting ``Onii-Chan'' in various ways and would always let us know what song she was singing next.\\
-	Worth noting is her dedication to singing whatever the users uploaded, even when endless hordes of David Bowie songs were added to her playlist she never gave up.\\
-	While historians debate the exact date of Radio-tan's disappearance, but they all agree it was sometime during March 2014.
-
-\vfill
-\pagebreak
-
-\section[Registered Nicknames]{Registered Nicknames, or How Volafile Learned To Stop Samefagging and Love Persistant Identities\footnotemark}
-	\footnotetext{Just kidding}
-Feb something arather. Lain added a registration system to Volafile allowing users to register nicknames. Registered nicks are shown in the chat as a dark green colour. Following this update, Lain also removed the authcode system for moderators, instead tying moderator status to registered accounts.
-	\footnote{This made me quite the happy moderator} While it seems like such a system would prevent users from continuing to samefag
+        \section[Registered Nicknames]{Registered Nicknames, or How Volafile Learned To Stop Samefagging and Love Persistant Identities\footnotemark}
+        \footnotetext{Just kidding}
+        Feb something arather. Lain added a registration system to Volafile
+        allowing users to register nicknames. Registered nicks are shown
+        in the chat as a dark green colour. Following this update, Lain
+        also removed the authcode system for moderators, instead tying
+        moderator status to registered accounts.
+	\footnote{This made me quite the happy moderator}
+        While it seems like such a system would prevent users from continuing to samefag
 	\footnote{Use the same nickname as another user in order to deceive others, usually to make the actual nickname user look like an idiot.}
- it is still an occasional occurrence as some users prefer to note register their nicknames (as well as the fact that there are registered nicknames who have had their passwords shared.)
+        it is still an occasional occurrence as some users prefer to not register their
+        nicknames (as well as the fact that there are registered nicknames who have had their passwords shared.)
 
-\section[sekrit klubs 101]{sekrit klubs 101: How to start a shit storm. (Lain adds Private Rooms)}
-	I'm gona write some stuff about secret clubs here 
+        \section[sekrit klubs 101]{sekrit klubs 101: How to start a shit storm. (Lain adds Private Rooms)}
+        I'm gona write some stuff about secret clubs here.
 
-\section{The Beginning of the Great Loli Prohibition}
-Yui and Yuki left (kind of) Dark times descended upon Volafile when Lain
-decreed that lolicon shalt be banned. Chaos reigns and lots of people got
-mad at the mods while the mods got mad at lots of people.
-\vfill
-\pagebreak
+        \section{The Beginning of the Great Loli Prohibition}
+        Yui and Yuki left (kind of) Dark times descended upon Volafile when Lain
+        decreed that lolicon shalt be banned. Chaos reigns and lots of people got
+        mad at the mods while the mods got mad at lots of people.
 
+        \vfill
+        \pagebreak
 
+        \section{Olafile}
+        March 24th Volafile become Olafile (remember to elaborate and add pictures k thanks)
 
-\section{Olafile}
-March 24th Volafile become Olafile (remember to elaborate and add pictures k thanks)
+        \chapter{Notable Rooms}
 
-\chapter{Notable Rooms}
+        \section{/g/entoomen}
+        The one and only, longest active room on site, it averages 35 users
+        most days, peaks around 40-50 and never seems to drop below 20.
+        Named after the /g/entoomen torrent of ebooks released by the irc
+        channel {\#}/g/sicp.\footnote{which is itself a branch of users from 4chan's /g/ board}
+        Almost all the notable users listed later in this book are current
+        or past regulars of the /g/entoomen room. Definantly the room which
+        has generated the most content and history over it's lifetime,
+        the day it dies will probably be the day Lain shuts down Volafile.
+        \footnote{Or accidently deletes it off the server)
 
-\section{/g/entoomen}
-	The one and only, longest active room on site, it averages 35 users most days, peaks around 40-50 and never seems to drop below 20. Named after the /g/entoomen torrent of ebooks released by the irc channel {\#}/g/sicp.\footnote{which is itself a branch of users from 4chan's /g/ board}
-	 Almost all the notable users listed later in this book are current or past regulars of the /g/entoomen room. Definantly the room which has generated the most content and history over it's lifetime, the day it dies will probably be the day Lain shuts down Volafile. \footnote{Or accidently deletes it off the server}
+        \section{Hacker News}
+        While quite lively during the Hacker News Invasion currently it
+        spends most of it's time as an empty reminder of what once was.
+        DaVinci has a strange habit of uploading tech .pdfs in it
+        regardless of whether people notice or not.
 
-\section{Hacker News}
-	While quite lively during the Hacker News Invasion currently it spends most of it's time as an empty reminder of what once was. DaVinci has a strange habit of uploading tech .pdfs in it regardless of whether people notice or not.
-	
-\section{read this if there are no other notable rooms}
+        \section{read this if there are no other notable rooms}
+        \chapter{Notable Users}
+        Volafile has had hundreds of users over it's lifetime, many are remembered for various reasons, not all of them good, but most of them amusing.
 
+        \section{Moderators}
 
-\chapter{Notable Users}
-	Volafile has had hundreds of users over it's lifetime, many are remembered for various reasons, not all of them good, but most of them amusing.
+        \subsubsection{Lain}
+        Creator of Volafile, currently runs the site from his homebase in Germany. \\
+        Used to go by the name of System. Known for suddenly appearing in
+        chat and telling everyone he is about to restart the servers,
+        throwing  the chat into disarray. Also known for removing Radio-tan,
+        implementing unrequested features at random (while ignoring the requested ones
+        \footnote{Just kidding Lain don't hurt me pls})
+        and having a pretty kawaii German accent.
 
-\section{Moderators}
+        \subsubsection{PTC}
+        Likes shekels, known to be trollish. PTC was the first person to help
+        Lain with the development of Volafile, having met Lain beforehand
+        when PTC posted a site he had made in a thread on /g/.
+        Lain proceeded to troll PTC's thread and eventually an unbreakable
+        \footnote{probably}
+        friendship was formed.
 
+        \subsubsection{bbaka}
+        First mod to be appointed during the September beta, and the authour
+        of this historical account. Known for being from New Zealand and
+        being on site 24/7. Beloved by most and heckled by others, he
+        spends far too much time on Volafile. Catchphrase: ``Yo, 'Sup''
 
-\subsubsection{Lain}
-	Creator of Volafile, currently runs the site from his homebase in Germany. \\
-	Used to go by the name of System. Known for suddenly appearing in chat and telling everyone he is about to restart the servers, throwing  the chat into disarray. Also known for removing Radio-tan, implementing unrequested features at random (while ignoring the requested ones\footnote{Just kidding Lain don't hurt me pls}) and having a pretty kawaii German accent.
-	
-	
-\subsubsection{PTC}
-	Likes shekels, known to be trollish. PTC was the first person to help Lain with the development of Volafile, having met Lain beforehand when PTC posted a site he had made in a thread on /g/. Lain proceeded to troll PTC's thread and eventually an unbreakable\footnote{probably} friendship was formed.
-	
-	
-\subsubsection{bbaka}
-	First mod to be appointed during the September beta, and the authour of this historical account. Known for being from New Zealand and being on site 24/7. Beloved by most and heckled by others, he spends far too much time on Volafile.
-	Catchphrase: ``Yo, 'Sup''
-	
-\subsubsection{God}
-	God is known for the now infamous incident involving him pasting his auth-code into the chat, allowing users to authenticate themselves as mods. Thankfully the users restrained themselves from malicious actions. God is no longer on site and has retired as a moderator.
-	
-	 
-\subsubsection{lg188}
-Volafile's proverbial dark knight, lg188 was known for moderating Volafile with what was on occasion, an iron fist. Hated by some for his strong pursuit of justice, he was not one to shy away from the abuse of users. Some viewed his methods as going too far, while others believed them within the bounds of acceptable moderation. As of present day, lg188 has retired from moderating by his own choice and still frequents /g/entoomen.
-	
-\subsubsection{DaVinci}
-	Long time user and more recently moderator, DaVinci is known for his sporadic outbursts of text, which are to some, nonsense. Probably the oldest user on site, his sage advice includes such things along the lines of: ``Don't fuck that guy's daughter when he is contracting you for thousands of dollars worth of work.'' 
-\vfill
-\pagebreak
-\subsubsection{Yui}
-	Known as being one of Volafile worst moderators, Yui was known on occasion to link /b/ to Volafile rooms while baiting for CP and Lolis. Despite this fact he has not been perma-banned and is beloved by some users. Once managed to get the Volafile mumble to beg him to speak for almost an hour due to his kawaii accent. Demodded by Lain in late 2013 due to his various rule bending and breaking escapades. Hangs around Volafile to this day occasionally stirring up trouble; yet is seen by most users as a devilish rouge of sorts.
-	\\
+        \subsubsection{God}
+        God is known for the now infamous incident involving him pasting
+        his auth-code into the chat, allowing users to authenticate
+        themselves as mods. Thankfully the users restrained themselves
+        from malicious actions. God is no longer on site and has
+        retired as a moderator.
+
+        \subsubsection{lg188}
+        Volafile's proverbial dark knight, lg188 was known for moderating
+        Volafile with what was on occasion, an iron fist. Hated by some
+        for his strong pursuit of justice, he was not one to shy away
+        from the abuse of users. Some viewed his methods as going too far,
+        while others believed them within the bounds of acceptable moderation.
+        As of present day, lg188 has retired from moderating by his own
+        choice and still frequents /g/entoomen.
+
+        \subsubsection{DaVinci}
+        Long time user and more recently moderator, DaVinci is known for his
+        sporadic outbursts of text, which are to some, nonsense.
+        Probably the oldest user on site, his sage advice includes such
+        things along the lines of: ``Don't fuck that guy's daughter when
+        he is contracting you for thousands of dollars worth of work.''
+
+        \vfill
+        \pagebreak
+
+        \subsubsection{Yui}
+        Known as being one of Volafile worst moderators, Yui was known on
+        occasion to link /b/ to Volafile rooms while baiting for CP and Lolis.
+        Despite this fact he has not been perma-banned and is beloved by
+        some users. Once managed to get the Volafile mumble to beg him
+        to speak for almost an hour due to his kawaii accent. Demodded by
+        Lain in late 2013 due to his various rule bending and breaking escapades.
+        Hangs around Volafile to this day occasionally stirring up trouble;
+        yet is seen by most users as a devilish rouge of sorts.\\
 	Also known as: Finland-chan
 
-\subsection{eee}
-	eee is a veteran user of Volafile and while she has disappeared from the site for months at a time, continues to visit the site sporadically. Famous for the BEARSBEARSBEARS incident in which she concocted a script which when uploaded to Volafile, caused the chat to be spammed with the words ``BEARSBEARSBEARS''
-	\footnote{For more information look it up in the notable events section.}\\
-eee was a moderator who was not often in the spotlight, and is currently retired from the position. \\Currently known for lusting after a bewildered (but reciprocal) bbaka, the BEARSBEARSBEARS incident is forgotten by most.
+        \subsection{eee}
+        eee is a veteran user of Volafile and while she has disappeared
+        from the site for months at a time, continues to visit the site
+        sporadically. Famous for the BEARSBEARSBEARS incident in which
+        she concocted a script which when uploaded to Volafile, caused
+        the chat to be spammed with the words ``BEARSBEARSBEARS''
+        \footnote{For more information look it up in the notable events section.}\\
+        eee was a moderator who was not often in the spotlight,
+        and is currently retired from the position. \\Currently known for
+        lusting after a bewildered (but reciprocal) bbaka,
+        the BEARSBEARSBEARS incident is forgotten by most.
 
-\subsection{GankPlank}
-Known for liking K-On 
+        \subsection{GankPlank}
+        Known for liking K-On
 
-\subsection{Dead}
-\subsection{Lasol}
-Also known as: Iaso
-\vfill
-\pagebreak
+        \subsection{Dead}
 
-\subsection{Users}
+        \subsection{Lasol}
+        Also known as: Iaso
 
+        \vfill
+        \pagebreak
 
-\subsubsection{NTimeForLove (rip)}
-Famous for disappearing after revealing medical issues leading to users believing they were dead. Reappeared months later
-\subsubsection{Panacea}
-	/pol/ incarnate, richfag, mlp fanfic authour, gay, etc
-\subsubsection{nonfagget (currently known as bsdfggt)}
-	Resident Venezulan, lives in dangerous times. Helps everyone remember to check their first world privilages. Known for pasting news articles into the chat and getting mad about them, as well as for having terrible internet speeds. Currently living off of live distros as his harddrive imploded.
-\subsubsection{MercWMouth}
-	Resident /b/tard and self proclaimed ``meme addict'', known for being a pain in the ass and uploading files with a large amount of tags.
-\subsubsection{Triggu}
-Resident jailbait. Creates websites that look like they are on lsd.
-\subsubsection{Vaporeon}
-	Currently Volafile's number 1 uploader, with over 2.5 Terrabytes (7164 files) uploaded. Pretends to be a girl. Currently AWOL.
-\subsubsection{Anon007}
-	Currently Volafile's number 2 uploader, with over 2.2 Terrabytes (2073 files) uploaded. Likes to get into internet screaming matches.\\ Catchphrase: "FUCK YOU"
-\subsubsection{Kurono}
-	Volafile's former number 1 (now number 4), with over 1.5 Terrabytes (2845 files) uploaded. Currently known as Sabio because he forgot his password\footnote{What a silly thing to do}, so he currently sits well below his old throne.
-	
-\subsubsection{gnusuks}
-	he made the first css theme and did some scripts and shit 
-	
-\subsection{faggleader}
-	Volafile's resident master trole, faggleader is known for his penchant for multiple nicknames and his anti bullying policy. One of lg188's critics, faggleader jumped with joy when Lain implemented private rooms and created his own ``sekrit klub'' to escape from what he saw as tyranny and bullying (and Merc).\footnote{To read more on this, find the section on ``sekrit klubs'' in the notable events section.}
+        \subsection{Users}
 
-\subsection{NSF001} %clean this up you baka!
-	Not a user but an account created to be used by many for the purposes of anonymity.
-	Why was this account made? "it was also the day everyone learned we can all log into the same account..this is the only true anonymous account " \\
-	Password: "If you played deus ex you know the password"
+        \subsubsection{NTimeForLove (rip)}
+        Famous for disappearing after revealing medical issues leading
+        to users believing they were dead. Reappeared months later
 
-\subsection{4age}
+        \subsubsection{Panacea}
+        /pol/ incarnate, richfag, mlp fanfic authour, gay, etc
 
-\subsection{Akkarin}
+        \subsubsection{nonfagget (currently known as bsdfggt)}
+        Resident Venezulan, lives in dangerous times. Helps everyone
+        remember to check their first world privilages. Known for
+        pasting news articles into the chat and getting mad about them,
+        as well as for having terrible internet speeds. Currently living
+        off of live distros as his harddrive imploded.
 
-\subsection{Anon3000}
-Likes to complain about lack of loli and https. Since we have https now I guess he only complains about loli.Goddamit.
+        \subsubsection{MercWMouth}
+        Resident /b/tard and self proclaimed ``meme addict'', known for being
+        a pain in the ass and uploading files with a large amount of tags.
 
-\subsection{Anon777}
+        \subsubsection{Triggu}
+        Resident jailbait. Creates websites that look like they are on lsd.
 
-\subsection{Anon8122}
+        \subsubsection{Vaporeon}
+        Currently Volafile's number 1 uploader, with over 2.5 Terrabytes (7164 files) uploaded.
+        Pretends to be a girl. Currently AWOL.
 
-\subsection{Apha}
-Resident Macfag, if he could purchase an Apple branded toilet he probably would. 
-Also known as: Aphaean
+        \subsubsection{Anon007}
+        Currently Volafile's number 2 uploader, with over 2.2 Terrabytes (2073 files) uploaded.
+        Likes to get into internet screaming matches.\\ Catchphrase: "FUCK YOU"
 
-\subsection{BasedAnon}
-britbong and bully. 
+        \subsubsection{Kurono}
+        Volafile's former number 1 (now number 4), with over 1.5 Terrabytes (2845 files) uploaded.
+        Currently known as Sabio because he forgot his password
+        \footnote{What a silly thing to do},
+        so he currently sits well below his old throne.
 
-\subsection{EdgyYuri}
-Frenchman, currently AWOL; suspected of an hero by some users.
+        \subsubsection{gnusuks}
+        he made the first css theme and did some scripts and shit
 
-\subsection{Auxo}
-\subsection{BigSp00n}
-\subsection{Bucyrus}
-\subsection{Bunn}
-\subsection{Cyberia}
-\subsection{DELTA38}
-\subsection{Dad}
-\subsection{DonQuixote}
-\subsection{Esoterical}
-Also known as: Eupraxia
-\subsection{GNUsuks}
-\subsection{Ganondorf}
-Also known as: GNUAnon
-\subsection{Green}
-Also known as: IGreenNow
-\subsection{Hedonekun}
-\subsection{KRONOR}
-\subsection{Electra}
-\subsection{Kratos}
-\subsection{Lancer}
-\subsection{Laplace}
-\subsection{Nestor}
-\subsection{Otrera}
-\subsection{Patchon}
-Also known as: Chen
-\subsection{Red}
-\subsection{TRM}
-\subsection{Wawawwwaw}
-\subsection{Yukari}
-\subsection{Yuki}
-Also known as: Chinatsu, lllllllllll
+        \subsection{faggleader}
+        Volafile's resident master trole, faggleader is known for his penchant for
+        multiple nicknames and his anti bullying policy. One of lg188's critics,
+        faggleader jumped with joy when Lain implemented private rooms
+        and created his own ``sekrit klub'' to escape from what
+        he saw as tyranny and bullying (and Merc).
+        \footnote{To read more on this, find the section on ``sekrit klubs'' in the notable events section.}
 
-\chapter{Features Changelog}
-	What follows will attempt to be a rough yet accurate changelog of features on Volafile. For some of the history behind these changes, look at the front half of the book.\\\\
+        \subsection{NSF001} %clean this up you baka!
+        Not a user but an account created to be used by many for the purposes of anonymity.
+        Why was this account made? "it was also the day everyone learned we
+        can all log into the same account..this is the only true anonymous account " \\
+        Password: "If you played deus ex you know the password"
 
-August 19 2014:\\
-First update to this since March, lots of information pertaining to users is still out of date but it's a start at least. Book has been added to github so hopefully progress will be made by others.
+        \subsection{Anon3000}
+        Likes to complain about lack of loli and https. Since we have https now I guess he only complains about loli.Goddamit.
 
+        \subsection{Apha}
+        Resident Macfag, if he could purchase an Apple branded toilet he probably would. \\
+        Also known as: Aphaean
+
+        \subsection{BasedAnon}
+        britbong and bully.
+
+        \subsection{EdgyYuri}
+        Frenchman, currently AWOL; suspected of an hero by some users.
+
+        \subsection{Esoterical}
+        Also known as: Eupraxia
+
+        \subsection{Ganondorf}
+        Also known as: GNUAnon
+
+        \subsection{Green}
+        Also known as: IGreenNow
+
+        \subsection{Patchon}
+        Also known as: Chen
+
+        \subsection{Yuki}
+        Also known as: Chinatsu, lllllllllll
+
+        \subsection{TRM}
+        "Anime is but one salve upon the gaping wound of time." --Beardman of alexandria
+
+        \subsection{Red}
+        Arrived on the scene in october 2013 by merit of the filesharing threads on /g/.
+        Procrastinator, C programmer, segfaults abounding.
+        when he reads a book, he only reads the introduction.
+
+        \subsection{4age}
+        \subsection{Akkarin}
+        \subsection{Anon777}
+        \subsection{Anon8122}
+        \subsection{Auxo}
+        \subsection{BigSp00n}
+        \subsection{Bucyrus}
+        \subsection{Bunn}
+        \subsection{Cyberia}
+        \subsection{DELTA38}
+        \subsection{Dad}
+        \subsection{DonQuixote}
+        \subsection{GNUsuks}
+        \subsection{Hedonekun}
+        \subsection{KRONOR}
+        \subsection{Electra}
+        \subsection{Kratos}
+        \subsection{Lancer}
+        \subsection{Laplace}
+        \subsection{Nestor}
+        \subsection{Otrera}
+        \subsection{Wawawwwaw}
+        \subsection{Yukari}
+
+        \chapter{Features Changelog}
+        What follows will attempt to be a rough yet accurate changelog of features on Volafile.
+        For some of the history behind these changes, look at the front half of the book.\\\\
+        August 19 2014:\\
+        First update to this since March, lots of information pertaining to users is still
+        out of date but it's a start at least. Book has been added to github so hopefully
+        progress will be made by others.
+    }
+}
 \end{document}
